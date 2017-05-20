@@ -9,9 +9,9 @@ import cPickle as pickle
 import algorithm
 
 if __name__ == '__main__':
-    with open("A.pkl", "rb") as fa:
+    with open("A_con.pkl", "rb") as fa:
         A = pickle.load(fa)
-    with open("G.pkl", "rb") as fg:
+    with open("G_con.pkl", "rb") as fg:
         G = pickle.load(fg)
     image1 = "../lfw/Zico/Zico_0001.jpg"
     image2 = "../lfw/Zico/Zico_0002.jpg"
