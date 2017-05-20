@@ -9,8 +9,8 @@ import cPickle as pickle
 import algorithm
 
 if __name__ == '__main__':
-    A = pickle.load(open("A.pkl", "w"))
-    G = pickle.load(open("G.pkl", "w"))
+    A = pickle.load(open("A.pkl", "r"))
+    G = pickle.load(open("G.pkl", "r"))
     image1 = "../lfw/Zico/Zico_0001.jpg"
     image2 = "../lfw/Zico/Zico_0002.jpg"
     print algorithm.Verify(A,G,pca.transform(deal_image(image1)), pca.transform(deal_image(image2)))
