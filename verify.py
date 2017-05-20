@@ -8,8 +8,7 @@ import os
 import cPickle as pickle
 import algorithm
 
-
-if __name__ == __"main"__:
+if __name__ == '__main__'
     A = pickle.load("A.pkl")
     G = pickle.load("G.pkl")
     image1 = "../lfw/Zico/Zico_0001.jpg"
