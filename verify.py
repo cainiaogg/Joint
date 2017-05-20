@@ -9,10 +9,11 @@ import cPickle as pickle
 import algorithm
 
 if __name__ == '__main__':
-    fa = open("A.pkl", "rb")
-    fb = open("G.pkl", "rb")
-    A = pickle.load(fa)
-    G = pickle.load(fb)
+    with open("A.pkl", "rb") as fa:
+        A = pickle.load(fa)
+    with open("G.pkl", "rb") as fg:
+        G = pickle.load(fg)
     image1 = "../lfw/Zico/Zico_0001.jpg"
     image2 = "../lfw/Zico/Zico_0002.jpg"
+    pca = joblib.load("pca_model.m")
     print algorithm.Verify(A,G,pca.transform(deal_image(image1)), pca.transform(deal_image(image2)))
