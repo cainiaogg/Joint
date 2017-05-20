@@ -111,4 +111,4 @@ def  train():
 if __name__ == '__main__':
     # test_PCA()
     # pre_do_data()
-    train()
+    # train()
