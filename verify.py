@@ -7,6 +7,7 @@ import numpy as np
 import os
 import cPickle as pickle
 import algorithm
+from test import deal_image
 
 if __name__ == '__main__':
     with open("A_con.pkl", "rb") as fa:
